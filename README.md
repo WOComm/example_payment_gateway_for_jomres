@@ -25,9 +25,12 @@ To test it on an installation of Jomres you have two ways you can install it :
 
 Trigger number explanation. These trigger numbers are presented in the order that the scripts are called, so setup first, then during the gateway's configuration, and then finally usage during payment. For more information on why these scripts are numbered this way, see [the manual page on minicomponents](https://www.jomres.net/manual/developers-guide-2/51-introduction/263-minicomponents).
 
+You are not limited to the trigger numbers used here. You can use any Jomres trigger number you need in your gateway, so for example in theory you could create a 07310 [webhook watcher](https://www.jomres.net/manual/developers-guide-2/64-webhooks) script that looks for property_created webhooks and then automatically add gateway settings to that property, That's not recommended in a multi-vendor situation, but it's perfectly acceptable if all properties will use the same payment gateway settings.
+
+
 #### *Always called*
 
-**00005** This trigger point is used for setting up various files, for example including your gateway's SDK files if it has an SDK, including language files and anything else that needs to be done. The 00005 script is always run, regardless of whether a Jomres plugin is called on a page (ie through a shortcode), if you are on a Jomres page, or if it's an ajax call.
+**00005** This trigger point is used for setting up various files, for example including your gateway's SDK files if it has an SDK, including language files and anything else that needs to be done to initialise things. The 00005 script is always run, regardless of whether a Jomres plugin is called on a page (ie through a shortcode), if you are on a Jomres page, or if it's an ajax call.
 
 #### *On the Property Configuration page*
 

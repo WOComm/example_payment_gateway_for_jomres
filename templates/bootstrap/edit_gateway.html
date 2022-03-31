@@ -1,0 +1,74 @@
+<patTemplate:tmpl name="edit_gateway" unusedvars="nbsp">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>{EXAMPLE_GATEWAY_TITLE}</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 ">
+				<img src="{LOGO} " class="img-fluid" width="100" alt="Example gateway logo">
+			</div>
+			<div class="col-sm-10">
+				<p>{EXAMPLE_GATEWAY_MARKETING}</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<p>
+					{EXAMPLE_GATEWAY_API_TOKEN_DESC}
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<p>
+					{EXAMPLE_GATEWAY_API_TEST_MODE_DESC}
+				</p>
+			</div>
+		</div>
+		<form method="post" name="adminForm" class="row g-3">
+			<div class="row">
+				<label for="active" class="col-sm-2 col-form-label">{JR_GATEWAY_CONFIG_ACTIVE}</label>
+				<div class="col-sm-10">
+					{ACTIVE}
+				</div>
+			</div>
+			<div class="row">
+				<label for="api_token" class="col-sm-2 col-form-label">{EXAMPLE_GATEWAY_API_TOKEN_TITLE}</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="api_token" name="api_token" value="{API_TOKEN}">
+				</div>
+			</div>
+			<div class="row">
+				<label for="test_mode" class="col-sm-2 col-form-label">{EXAMPLE_GATEWAY_API_TEST_MODE}</label>
+				<div class="col-sm-10">
+					{TEST_MODE}
+				</div>
+			</div>
+			<div class="row">
+				<label for="api_token" class="col-sm-2 col-form-label">{EXAMPLE_GATEWAY_TEST_API_TOKEN_TITLE}</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="test_api_token" name="test_api_token" value="{TEST_API_TOKEN}">
+				</div>
+			</div>
+			<div class="row pt-3">
+				<div class="col-sm-2">
+
+				</div>
+				<div class="col-sm-10">
+					<input type="submit" value="{COMMON_SUBMIT}" class="btn btn-success" >
+					<a href="JavaScript:window.close()" class="btn btn-default">{COMMON_CANCEL}</a>
+				</div>
+			</div>
+
+			<input type="hidden" name="no_html" value="1" />
+			<input type="hidden" name="plugin" value="{GATEWAY}" />
+			<input type="hidden" name="task" value="save_plugin" />
+
+			{CSRF_TOKEN}
+		</form>
+	</div>
+
+
+</patTemplate:tmpl>

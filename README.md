@@ -4,12 +4,12 @@ This is an example payment gateway plugin you can use as a framework to build yo
 
 It aims to be as concise as possible while still providing you with enough information to build a payment gateway. 
 
-Can be used in conjunction with the [manual page here](https://www.jomres.net/manual/developers-guide-2/58-other-discussions/payment-gateways/281-gateway-aide-memoire).
+Can be used in conjunction with the [manual page here](https://www.jomres.net/documents/English_Jomres_Site_Designers_Developers_Guide.pdf).
 
 See the individual file contents for more details.
 
 Some notes:
-- Gateway settings are usually specific to individual properties. The Jomres Stripe payment gateway is an exception to that rule, as is the Jomres Paypal backend configuration setting, but in general each property should have their own configuration settings such as API keys. Where-ever possible it's recommended that you create gateways that allow different properties to have different settings.
+- Gateway settings are usually specific to individual properties. The Jomres Paypal backend configuration setting, but in general each property should have their own configuration settings such as API keys. Where-ever possible it's recommended that you create gateways that allow different properties to have different settings.
 - When you rename these scripts you will need to rebuild the registry afterwards (Admin > Jomres > Tools > Rebuild registry) otherwise Jomres won't know that they exist and won't call them.
 - If you do rename a script, remember also to rename its class name to the same name as the file.
 - This example includes templates for Bootstrap 2, Bootstrap 3 & Bootstrap 5. This is to give you an idea of how to build the plugin if you intend to distribute your gateway to Jomres users. If you are building a gateway for your own use then some of them will be redundant. You can safely remove them.

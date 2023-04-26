@@ -9,7 +9,7 @@ Can be used in conjunction with the [manual page here](https://www.jomres.net/do
 See the individual file contents for more details.
 
 Some notes:
-- Gateway settings are usually specific to individual properties. The Jomres Paypal backend configuration setting, but in general each property should have their own configuration settings such as API keys. Where-ever possible it's recommended that you create gateways that allow different properties to have different settings.
+- Gateway settings are usually specific to individual properties. The Jomres Paypal plugin has backend configuration settings, but in general each property should have their own configuration settings such as API keys. Where-ever possible it's recommended that you create gateways that allow different properties to have different settings.
 - When you rename these scripts you will need to rebuild the registry afterwards (Admin > Jomres > Tools > Rebuild registry) otherwise Jomres won't know that they exist and won't call them.
 - If you do rename a script, remember also to rename its class name to the same name as the file.
 - This example includes templates for Bootstrap 2, Bootstrap 3 & Bootstrap 5. This is to give you an idea of how to build the plugin if you intend to distribute your gateway to Jomres users. If you are building a gateway for your own use then some of them will be redundant. You can safely remove them.

@@ -44,7 +44,7 @@ class j00005example_payment_gateway
 			}
 
 		// If you want to autoload an SDK's files, do that here
-		require_once($ePointFilepath.'vendor'.JRDS.'autoload.php');
+		//require_once($ePointFilepath.'vendor'.JRDS.'autoload.php');
 		}
 
 		
